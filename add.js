@@ -53,10 +53,28 @@ getProducts()
 
 
 function createProduct(obj) {
-    const productDiv = document.createElement('p')
+    const productCardDiv = document.createElement('div')
+    productCardDiv.setAttribute('class', 'card')
+    const productThumbnailDiv = document.createElement('div')
+    const productNameDiv = document.createElement('div')
+    const productPriceDiv = document.createElement('div')
     const productName = document.createElement('p')
+    const productprice = document.createElement('p')
+    const productThumbnail = document.createElement('img')
+
+    productCardDiv.append(productThumbnailDiv, productNameDiv, productPriceDiv)
+    console.log(productCardDiv)
+
+    productThumbnailDiv.append(productThumbnail)
+    productNameDiv.append(productName)
+    productPriceDiv.append(productprice)
+
+    productThumbnail.setAttribute('src', obj.thumbnail)
     productName.innerHTML = obj.name
-    console.log(productName)
+    productprice.innerHTML = obj.price
+
+    productName.innerHTML = obj.name
+
 }
 
 // ///////// is chat
