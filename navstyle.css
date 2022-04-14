@@ -1,0 +1,22 @@
+header {
+    background-color: rgb(240, 231, 240);
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.nav-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-top a {
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.nav-top p {
+    text-indent: 60px ;
+    font-size: 200%;
+    color: gray;
+}
